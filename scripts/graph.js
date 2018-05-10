@@ -79,7 +79,7 @@ function unixTime(date, time) {
 function generateGraph(id, start, end)
 {
 
-        $.getJSON('http://localhost:8080/feverscout?id=' + id + '&start=' + start + '&end=' + end, function(data) {
+        $.getJSON('https://fever-rest.herokuapp.com/feverscout?id=' + id + '&start=' + start + '&end=' + end, function(data) {
 
             if(data.data.length == 0)
             {
