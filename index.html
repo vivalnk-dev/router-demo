@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chartist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+        <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/jquery.timepicker.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-datepicker.css" />
+        <script type="text/javascript" src="scripts/datepair.js"></script>
+        <script type="text/javascript" src="scripts/jquery.datepair.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="scripts/jquery.timepicker.js"></script>
+        
+    </head>
+
+    
+    <body>
+<div id="chartdiv"></div>
+    </body>
+
+
+    <script src="scripts/graph.js"></script>
+
+    <p id="device">
+    Device serial number: <input type="text" class="serial" />
+    </p>
+
+
+    <p id="timeslot">
+    Time range: <input type="text" class="date-start" />
+    <input type="text" class="time-start" /> to
+
+    <input type="text" class="date-end" />
+    <input type="text" class="time-end" />
+    </p>
+ 
+    <input id="generate" type="submit" value="Generate Graph">
+
+    <p>
+        Sample serial numbers:<br />
+        - B15/00003445<br />
+        - B33/00047698<br />
+        - C2/00011827       
+    </p>
+
+
+</html>
