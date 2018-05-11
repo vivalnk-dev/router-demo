@@ -37,6 +37,14 @@ $( "#generate" ).click(function() {
     getGraphTimes();
 });
 
+function renderLoadingAnimation() {
+    $('.lds-container').show();
+}
+
+function deleteLoadingAnimation() {
+    $('.lds-container').hide();
+}
+
 function checkInputs(id, start, end)
 {
     if(id == ''){
@@ -78,7 +86,7 @@ function unixTime(date, time) {
 
 function generateGraph(id, start, end)
 {
-
+    renderLoadingAnimation()
         $.getJSON('https://fever-rest.herokuapp.com/feverscout?id=' + id + '&start=' + start + '&end=' + end, function(data) {
 
             if(data.data.length == 0)
@@ -151,6 +159,7 @@ function zoomChart(){
     chart.zoomToIndexes(Math.round(chart.dataProvider.length * 0.4), Math.round(chart.dataProvider.length * 0.55));
 }
 
+deleteLoadingAnimation();
         
     });
 }

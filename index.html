@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="stylesheets/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/jquery.timepicker.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/loading.css" />
         <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-datepicker.css" />
         <link rel="shortcut icon" href="https://www.vivalnk.com/hubfs/VivaLNK%20Favicon%20-1.png?t=1525847048512">
         <script type="text/javascript" src="scripts/datepair.js"></script>
@@ -26,11 +27,16 @@
 
     
     <body>
+        <div class="lds-container"> 
+            <div class="lds-facebook"><div></div><div></div><div></div></div>           
+        </div>
         <div id="chartdiv"></div>
+
     </body>
 
 <div id="inputs">
     <script src="scripts/graph.js"></script>
+
 
     <p id="device">
     Device serial number: <input type="text" class="serial" />
